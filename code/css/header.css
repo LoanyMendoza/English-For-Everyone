@@ -1,0 +1,116 @@
+:root{
+    --colorFondo: #FFFFFF; /*Color blanco*/
+    --azul-logo: #94CDDB;
+    --rojo-logo: #FFC10F;
+}
+
+.header{
+    background-color: var(--colorFondo);
+}
+
+@media (min-width: 768px){
+    .header{
+        position: sticky;
+        top: -130px;
+    }
+}
+
+.header__imagen{
+    justify-content: left;
+    height: 100px;
+}
+@media (min-width: 768px){
+    .header__imagen{
+        justify-content: left;
+        height: 130px;
+    }
+}
+
+.header__tituloE4E{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (min-width: 768px){
+    .header__tituloE4E{
+        justify-content: space-around;
+        font-size: 20px;
+    }
+}
+
+.header__noNav{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1rem;
+}
+@media (min-width: 768px){
+    .header__noNav{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+}
+
+/*configuración del ícono de menú*/
+
+.menuicon {
+    width:6%;
+    display: block;
+}
+
+@media (min-width: 768px){
+.menuicon{
+    color:black;
+    font-size: 20pt;
+    margin-right: 10px;
+    display: none;
+}
+.viewMenu{
+    left: 0;
+    transition: 0.5s all;
+}
+}
+
+    .navprincipal{
+    width: 100%;
+    display: flex;
+    background-color: var(--azul-logo);
+    flex-direction:column;
+    text-align: left;
+    }
+
+@media (min-width: 768px){
+    .navprincipal{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+
+    .navprincipal__elemento:hover{
+        font-size: 25px;
+        background-color: var(--rojo-logo);
+    }
+
+
+}
+
+.navprincipal__elemento{
+    color: black;
+    text-decoration:none;
+    font-family:'Times New Roman', Times, serif;
+    padding: 9px;
+    font-size: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-color: gray;
+}
+@media (min-width: 700px){
+    .navprincipal__elemento{
+        font-size: 20px;
+    }
+}
+
+
+.pagina-actual{
+    background-color: var(--rojo-logo)
+}
