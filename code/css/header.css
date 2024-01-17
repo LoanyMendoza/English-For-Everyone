@@ -52,34 +52,36 @@
 
 /*configuración del ícono de menú*/
 
-.menuicon {
+.icono {
     width:6%;
     display: block;
 }
 
 @media (min-width: 768px){
-.menuicon{
+.icono{
     color:black;
     font-size: 20pt;
     margin-right: 10px;
     display: none;
 }
+}
+
 .viewMenu{
     left: 0;
     transition: 0.5s all;
 }
-}
 
-    .navprincipal{
+.navprincipal{
     width: 100%;
     display: flex;
     background-color: var(--azul-logo);
     flex-direction:column;
     text-align: left;
-    }
+}
 
 @media (min-width: 768px){
     .navprincipal{
+        z-index: 2;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -90,8 +92,6 @@
         font-size: 25px;
         background-color: var(--rojo-logo);
     }
-
-
 }
 
 .navprincipal__elemento{

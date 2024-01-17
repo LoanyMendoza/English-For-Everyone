@@ -185,3 +185,28 @@ body{
     font-size: 5rem;
     padding: 2rem;
 }
+
+@media (min-width: 768px){
+    .mision, .vision {
+        background-color: green;
+    }
+
+
+    .misiontitle, .visiontitle {
+    color: #FFFFFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    }
+
+    .misiontext, .visiontext {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    color: #FFFFFF;
+    }
+
+    .misionimg, .visionimg{
+        width: 500px;
+        height: 500px;
+    }
+}
+
