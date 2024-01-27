@@ -55,20 +55,16 @@
 .icono {
     width:6%;
     display: block;
+    margin: 0 0 0 5rem;
 }
 
 @media (min-width: 768px){
-.icono{
-    color:black;
-    font-size: 20pt;
-    margin-right: 10px;
-    display: none;
-}
-}
-
-.viewMenu{
-    left: 0;
-    transition: 0.5s all;
+    .icono{
+        color:black;
+        font-size: 20pt;
+        margin-right: 10px;
+        display: none;
+    }
 }
 
 .navprincipal{
@@ -77,6 +73,12 @@
     background-color: var(--azul-logo);
     flex-direction:column;
     text-align: left;
+}
+
+.viewMenu{
+    display: none; 
+    left: 0;
+    transition: 2s all;
 }
 
 @media (min-width: 768px){
